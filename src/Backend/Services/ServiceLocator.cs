@@ -133,9 +133,13 @@ namespace ZeroInstall.Services
         {
             get
             {
-                return Get(ref _solver, () => new FallbackSolver(
-                    new BacktrackingSolver(Config, FeedManager, Store, PackageManager, Handler),
-                    new PythonSolver(Config, FeedManager, Handler)));
+                return Get(ref _solver, () =>
+                {
+                    ISolver
+                        backtrackingSolver = new BacktrackingSolver(Config, FeedManager, Store, PackageManager, Handler),
+                        externalSolver = new ExternalJsonSolver(backtrackingSolver, SelectionsManager, Fetcher, Executor, Config, FeedManager, Handler);
+                    return new FallbackSolver(backtrackingSolver, externalSolver);
+                });
             }
             set { _solver = value; }
         }
