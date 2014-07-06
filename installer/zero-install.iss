@@ -7,19 +7,14 @@
 #include "scripts\fileversion.iss"
 #include "scripts\winversion.iss"
 #include "scripts\products.iss"
-#include "scripts\products\kb835732.iss"
-#include "scripts\products\msi20.iss"
 #include "scripts\products\msi31.iss"
-#include "scripts\products\dotnetfx20.iss"
-#include "scripts\products\dotnetfx20sp1.iss"
-#include "scripts\products\dotnetfx20sp2.iss"
+#include "scripts\products\dotnetfx35or40.iss"
 #include "scripts\modpath.iss"
 
 [CustomMessages]
 ;Used by downloader
 appname=Zero Install
-win2000sp4_title=Windows 2000 Service Pack 4
-winxpsp2_title=Windows XP Service Pack 2
+winxpsp3_title=Windows XP Service Pack 3
 
 en.compile_netfx=Pre-compile .NET assemblies for faster application startup
 en.DesktopIcon=Create desktop icon
@@ -48,7 +43,7 @@ de.StoreService=Store Dienst installieren (Anwendungsdateien zwischen Benutzern 
 OutputDir=..\build\Installer
 
 ShowLanguageDialog=auto
-MinVersion=0,5.0
+MinVersion=0,5.1
 AppVersion={#Version}
 AppVerName=Zero Install for Windows v{#Version}
 AppCopyright=Copyright 2010-2013 Bastian Eicher et al
@@ -179,32 +174,19 @@ begin
 	// Determine the exact Windows version, including Service pack
 	initwinversion();
 
-	// Check if .NET 2.0 can be installed on this OS
-	if not minwinspversion(5, 0, 4) then begin
-		MsgBox(FmtMessage(CustomMessage('depinstall_missing'), [CustomMessage('win2000sp4_title')]), mbError, MB_OK);
-		exit;
-	end;
-	if not minwinspversion(5, 1, 2) then begin
-		MsgBox(FmtMessage(CustomMessage('depinstall_missing'), [CustomMessage('winxpsp2_title')]), mbError, MB_OK);
+	// Check if .NET 3.5 can be installed on this OS
+	if not minwinspversion(5, 1, 3) then begin
+		MsgBox(FmtMessage(CustomMessage('depinstall_missing'), [CustomMessage('winxpsp3_title')]), mbError, MB_OK);
 		exit;
 	end;
 
 	// Add all required products to the list
-	msi20('2.0');
 	msi31('3.0');
-	if minwinversion(6, 0) then begin
-		//starting with Windows Vista, .netfx 3.0 or newer is included
+	if minwinversion(6, 1) then begin
+		//starting with Windows 7, .netfx 3.5 or newer is included
 	end else begin
-		if minwinversion(5, 1) then begin
-			dotnetfx20sp2();
-		end else begin
-			//if minwinversion(5, 0) and minwinspversion(5, 0, 4) then begin
-			//	kb835732();
-			//	dotnetfx20sp1();
-			//end else begin
-				dotnetfx20();
-			//end;
-		end;
+		//check for .NET 3.5 but install .NET 4.0
+		dotnetfx35or40();
 	end;
 
 	Result := true;
