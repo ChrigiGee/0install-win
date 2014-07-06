@@ -18,9 +18,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using JetBrains.Annotations;
-using NanoByte.Common.Collections;
-using ZeroInstall.Services.PackageManagers;
+using JetBrains.Annotations;using ZeroInstall.Services.PackageManagers;
 using ZeroInstall.Services.Properties;
 using ZeroInstall.Store;
 using ZeroInstall.Store.Implementations;

@@ -20,13 +20,13 @@ Zero Install itself is built upon this API. You can use the API to integrate Zer
         </references>
     </metadata>
     <files>
-        <file src="..\build\Release\Backend\ZeroInstall.Services.*" target="lib\net20" />
-        <file src="..\build\Release\Backend\ZeroInstall.DesktopIntegration.*" target="lib\net20" />
-        <file src="..\build\Release\Backend\Interop.IWshRuntimeLibrary.*" target="lib\net20" />
+        <file src="..\build\Release\Backend\ZeroInstall.Services.*" target="lib\net35" />
+        <file src="..\build\Release\Backend\ZeroInstall.DesktopIntegration.*" target="lib\net35" />
+        <file src="..\build\Release\Backend\Interop.IWshRuntimeLibrary.*" target="lib\net35" />
 
         <!-- Satellite assemblies (translations) -->
-        <file src="..\build\Release\Backend\de\ZeroInstall.Services.resources.dll" target="lib\net20\de" />
-        <file src="..\build\Release\Backend\de\ZeroInstall.DesktopIntegration.resources.dll" target="lib\net20\de" />
+        <file src="..\build\Release\Backend\de\ZeroInstall.Services.resources.dll" target="lib\net35\de" />
+        <file src="..\build\Release\Backend\de\ZeroInstall.DesktopIntegration.resources.dll" target="lib\net35\de" />
 
         <!-- Source code -->
         <file src="..\src\Backend\Services\**\*.cs" target="src\Services" />

@@ -15,17 +15,17 @@ You can download end-user binaries at http://0install.de/.</description>
         </dependencies>
     </metadata>
     <files>
-        <file src="..\build\Release\Frontend\ZeroInstall.Commands.*" target="lib\net20" />
-        <file src="..\build\Release\Frontend\ZeroInstall.OneGet.*" target="lib\net20" />
-        <file src="..\build\Release\Frontend\ZeroInstall.Central.*" target="lib\net20" />
-        <file src="..\build\Release\Frontend\ZeroInstall.Hooking.*" target="lib\net20" />
-        <file src="..\build\Release\Frontend\0install.*" target="lib\net20" />
-        <file src="..\build\Release\Frontend\0install-win.*" target="lib\net20" />
-        <file src="..\build\Release\Frontend\0store.*" target="lib\net20" />
-        <file src="..\build\Release\Frontend\0store-service.*" target="lib\net20" />
-        <file src="..\build\Release\Frontend\0alias.*" target="lib\net20" />
-        <file src="..\build\Release\Frontend\ZeroInstall.exe" target="lib\net20" />
-        <file src="..\build\Release\Frontend\ZeroInstall.pdb" target="lib\net20" />
+        <file src="..\build\Release\Frontend\ZeroInstall.Commands.*" target="lib\net35" />
+        <file src="..\build\Release\Frontend\ZeroInstall.OneGet.*" target="lib\net35" />
+        <file src="..\build\Release\Frontend\ZeroInstall.Central.*" target="lib\net35" />
+        <file src="..\build\Release\Frontend\ZeroInstall.Hooking.*" target="lib\net35" />
+        <file src="..\build\Release\Frontend\0install.*" target="lib\net35" />
+        <file src="..\build\Release\Frontend\0install-win.*" target="lib\net35" />
+        <file src="..\build\Release\Frontend\0store.*" target="lib\net35" />
+        <file src="..\build\Release\Frontend\0store-service.*" target="lib\net35" />
+        <file src="..\build\Release\Frontend\0alias.*" target="lib\net35" />
+        <file src="..\build\Release\Frontend\ZeroInstall.exe" target="lib\net35" />
+        <file src="..\build\Release\Frontend\ZeroInstall.pdb" target="lib\net35" />
 
         <!-- Source code -->
         <file src="..\src\Frontend\**\*.cs" target="src" />

@@ -34,10 +34,6 @@
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>..\..\packages\ICSharpCode.SharpZipLib.Patched.0.86.4\lib\net20\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
-    <Reference Include="LinqBridge">
-      <HintPath>..\..\packages\LinqBridge.1.3.0\lib\net20\LinqBridge.dll</HintPath>
-      <Aliases>LinqBridge</Aliases>
-    </Reference>
     <Reference Include="NanoByte.Common">
       <HintPath>..\..\packages\NanoByte.Common.1.1.8\lib\net20\NanoByte.Common.dll</HintPath>
     </Reference>
@@ -45,8 +41,8 @@
       <HintPath>..\..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
     <Reference Include="Moq">
       <HintPath>..\..\packages\Moq.Contrib.0.3\lib\Moq.dll</HintPath>
     </Reference>

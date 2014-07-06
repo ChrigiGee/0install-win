@@ -13,11 +13,6 @@ http://code.google.com/p/moq-contrib/
 New BSD license: http://opensource.org/licenses/BSD-3-Clause
 NuGet package: Moq.Contrib
 
-LinqBridge
-http://code.google.com/p/linqbridge/
-MIT license: http://opensource.org/licenses/MIT
-NuGet package: LinqBridge
-
 ICSharpCode.SharpZipLib (patched)
 http://www.icsharpcode.net/OpenSource/SharpZipLib/ + https://github.com/nano-byte/SharpZipLib
 GNU GPL with GNU Classpath exception

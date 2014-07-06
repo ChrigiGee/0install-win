@@ -21,14 +21,14 @@ This API provides a common basis for the packages ZeroInstall.Services and ZeroI
         </references>
     </metadata>
     <files>
-        <file src="..\build\Release\Backend\ZeroInstall.Store.*" target="lib\net20" />
+        <file src="..\build\Release\Backend\ZeroInstall.Store.*" target="lib\net35" />
 
         <!-- Satellite assemblies (translations) -->
-        <file src="..\build\Release\Backend\de\ZeroInstall.Store.resources.dll" target="lib\net20\de" />
+        <file src="..\build\Release\Backend\de\ZeroInstall.Store.resources.dll" target="lib\net35\de" />
 
         <!-- Bundled dependencies -->
-        <file src="..\lib\INIFileParser.*" target="lib\net20" />
-        <file src="..\lib\Microsoft.Deployment.*" target="lib\net20" />
+        <file src="..\lib\INIFileParser.*" target="lib\net35" />
+        <file src="..\lib\Microsoft.Deployment.*" target="lib\net35" />
 
         <!-- Bundled native dependencies -->
         <file src="..\lib\7zxa*.dll" target="content" />

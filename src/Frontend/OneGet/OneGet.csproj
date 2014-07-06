@@ -11,6 +11,10 @@
     <AssemblyName>ZeroInstall.OneGet</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <SignAssembly>false</SignAssembly>
+    <RootNamespace>ZeroInstall.Capture</RootNamespace>
+    <AssemblyName>ZeroInstall.Capture</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SignAssembly>true</SignAssembly>
     <DelaySign>false</DelaySign>
     <AssemblyOriginatorKeyFile>..\..\sgKey.snk</AssemblyOriginatorKeyFile>
     <NoWarn>1591</NoWarn>
@@ -52,8 +56,11 @@
     <Reference Include="NanoByte.Common, Version=1.1.8.0, Culture=neutral, PublicKeyToken=3090a828a7702cec, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\NanoByte.Common.1.1.8\lib\net20\NanoByte.Common.dll</HintPath>
+    <Reference Include="NanoByte.Common">
+      <HintPath>..\..\packages\NanoByte.Common.1.1.6\lib\net20\NanoByte.Common.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\..\AssemblyInfo.Global.cs" />

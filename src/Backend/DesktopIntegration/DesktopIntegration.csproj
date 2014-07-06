@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ZeroInstall.DesktopIntegration</RootNamespace>
     <AssemblyName>ZeroInstall.DesktopIntegration</AssemblyName>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <SignAssembly>true</SignAssembly>
     <DelaySign>false</DelaySign>
     <AssemblyOriginatorKeyFile>..\..\sgKey.snk</AssemblyOriginatorKeyFile>
@@ -45,13 +45,11 @@
     <Reference Include="ICSharpCode.SharpZipLib">
       <HintPath>..\..\packages\ICSharpCode.SharpZipLib.Patched.0.86.4\lib\net20\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
-    <Reference Include="LinqBridge">
-      <HintPath>..\..\packages\LinqBridge.1.3.0\lib\net20\LinqBridge.dll</HintPath>
-    </Reference>
     <Reference Include="NanoByte.Common">
       <HintPath>..\..\packages\NanoByte.Common.1.1.8\lib\net20\NanoByte.Common.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Core" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
