@@ -1,0 +1,2 @@
+*.*proj: net20\NanoByte.Common --> net35\NanoByte.Common
+packages.config: <package id="NanoByte.Common" version="X.Y.Z" targetFramework="net20" /> --> <package id="NanoByte.Common" version="X.Y.Z" targetFramework="net35" />
